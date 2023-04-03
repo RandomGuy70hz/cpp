@@ -1,3 +1,8 @@
+/* To compile:
+    g++ <filename>.cpp -o <filename> -std=c++17
+    ./<filename>
+*/
+
 #include <iostream>
 #include <string>
 #include <vector>
