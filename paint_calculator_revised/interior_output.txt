@@ -1,0 +1,5 @@
+Area: 1.26481e-321 square feet
+Paint cost: $20
+Labor cost: $1.97626e-322
+Total time: 9.88131e-324 hours
+Total cost: $20
