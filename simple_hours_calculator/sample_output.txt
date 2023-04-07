@@ -1,0 +1,102 @@
+Expected output:
+
+[optional: ask when pay is; daily, weekly, bi-weekly, monthly]
+[optional: if N [hourly rate] <= 15 print "Broke Bitch"; if N >= 15 print "Damn you're rich!"]
+[optional: if hrs <= 40/week or 80/bi-week print: no regular overtime. Stat holiday?]
+
+===============================================================
+
+                Welcome! Lets get started.
+                
+===============================================================
+
+First we will need some inputs.
+
+---------------------------------------------------------------
+
+Input your hourly rate: [user input]
+
+You entered: $[user input] is this correct?
+1) Yes
+2) No
+[if no, repeat step above. If yes, continue]
+
+---------------------------------------------------------------
+
+Next, input your regular worked hours: [user input]
+
+You've entered N hrs. Is this correct?
+1) Yes
+2) No
+[if no, repeat step above. If yes, continue]
+
+---------------------------------------------------------------
+
+
+Next, input amount of hours worked in regular overtime: [user input]
+
+You've entered N hrs. Is this correct?
+1) Yes
+2) No
+[if no, repeat step above. If yes, continue]
+
+---------------------------------------------------------------
+
+
+Next, did you work during a statutory holiday?
+1) Yes
+2) No
+[if no, continue, If yes, ask for input]
+
+---------------------------------------------------------------
+
+Input amount of hours you worked on the stat. holiday: [user input]
+
+You've entered N hrs. Is this correct?
+1) Yes
+2) No
+[if no, repeat step above. If yes, continue]
+
+---------------------------------------------------------------
+
+Input that overtime rate for regular overtime: [userinput]
+
+You've entered xN . Is this correct?
+1) Yes
+2) No
+[if no, repeat step above. If yes, continue]
+
+---------------------------------------------------------------
+
+Input that overtime rate for statutory holiday: [userinput]
+
+You've entered xN . Is this correct?
+1) Yes
+2) No
+[if no, repeat step above. If yes, continue]
+
+
+===============================================================
+
+    Thank you for your inputs. See summary below:
+
+===============================================================
+
+                Hourly rate: N
+                Total regular hours: N
+                Total regular overtime hours: N
+                Total holiday overtime hours: N
+
+---------------------------------------------------------------
+
+                Total hours overall: N
+                Expected pay (gross):
+
+===============================================================
+
+
+example overtime rate:
+- my regular overtime is x1.5 so my regular hours would be multiplied by 1.5 to get my overtime hours
+- holiday overtime is x2 so my regular hours would be multiplied by 2 to get my stat holiday hours
+
+
