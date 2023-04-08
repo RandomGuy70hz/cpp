@@ -62,7 +62,11 @@ int main()
 
     double hourly_rate = get_input("Enter your hourly rate ($): ", "$");
     double regular_hours = get_input("Next, enter your regular worked hours: ", "", " hr(s)");
-    double regular_overtime_hours = get_input("Next, enter amount of hours worked in regular overtime: ", "", " hr(s)");
+    double regular_overtime_hours = get_input("Next, enter amount of hours worked in regular overtime: ", "", " hr(s)"); // move this to line 65
+
+
+    
+
 
     char worked_stat_holiday;
     std::cout << "Did you work during a statutory holiday? (y/n) : ";
@@ -73,7 +77,9 @@ int main()
     if (worked_stat_holiday == 'y' || worked_stat_holiday == 'Y')
     {
         holiday_overtime_hours = get_input("Enter number of hours you worked on the statutory holiday: ", "", " hr(s)");
+        //double regular_overtime_rate = get_input("Enter overtime rate for regular overtime: ", "x");
     }
+
 
     double regular_overtime_rate = get_input("Enter overtime rate for regular overtime: ", "x");
     //double holiday_overtime_rate = get_input("Enter overtime rate for statutory holiday: ", "x");
@@ -84,14 +90,16 @@ int main()
         holiday_overtime_rate = get_input("Enter overtime rate for statutory holiday: ", "x");
     }
 
-    std::cout << "===============================================================\n\n"
-              << "    Thank you for your inputs. See summary below:\n\n"
-              << "===============================================================\n\n"
-              << "                Hourly rate: $" << hourly_rate << "\n"
-              << "                Total regular hours: " << regular_hours << " hr(s)\n"
-              << "                Total regular overtime hours: " << regular_overtime_hours << " hr(s)\n"
-              << "                Total holiday overtime hours: " << holiday_overtime_hours << " hr(s)\n\n"
-              << "---------------------------------------------------------------\n\n";
+
+    std::cout
+        << "===============================================================\n\n"
+        << "    Thank you for your inputs. See summary below:\n\n"
+        << "===============================================================\n\n"
+        << "                Hourly rate: $" << hourly_rate << "\n"
+        << "                Total regular hours: " << regular_hours << " hr(s)\n"
+        << "                Total regular overtime hours: " << regular_overtime_hours << " hr(s)\n"
+        << "                Total holiday overtime hours: " << holiday_overtime_hours << " hr(s)\n\n"
+        << "---------------------------------------------------------------\n\n";
 
     double total_hours = regular_hours + (regular_overtime_hours * regular_overtime_rate) + (holiday_overtime_hours * holiday_overtime_rate);
     std::cout << "                Total hours: " << total_hours << " hr(s)\n";
