@@ -122,13 +122,7 @@ int main()
         std::cout << "\nSummary saved to " << file_path << "\n";
     }
 
-    /*if (save_to_file == 'y' || save_to_file == 'Y')
-    {
-        std::string file_name = "summary.txt";
-        std::filesystem::path file_path = std::filesystem::current_path() / file_name;
-        save_summary_to_file(file_path, hourly_rate, regular_hours, regular_overtime_hours, holiday_overtime_hours, total_hours, gross_pay);
-        std::cout << "\nSummary saved to " << file_name << " in path " << file_path << "\n";
-    }*/
+
 
     return 0;
 }
